@@ -1,6 +1,6 @@
-# animated_bar_fab
+# Custom Scaffold
 
-A new Flutter project.
+Custom Scaffold with both animated bottom navigation bar and floating action button
 
 ## Getting Started
 
