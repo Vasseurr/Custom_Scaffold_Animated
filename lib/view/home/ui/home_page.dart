@@ -12,6 +12,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  String androidSrc =
+      "https://thumbs.dreamstime.com/b/android-logo-vector-illustration-white-background-application-system-149046923.jpg";
+  String iosSrc =
+      "https://i.joecomp.com/img/ipad/965/type-apple-logo-icon-iphone.gif";
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
@@ -20,8 +24,10 @@ class _HomePageState extends State<HomePage> {
       itemBuilder: (context, index) {
         return Card(
           child: Center(
-              child: Image.network(
-                  "https://i.pinimg.com/originals/44/51/b1/4451b16f14d94961bbc5a1a29c2d3459.jpg")),
+            child: index == 0 || index == 3 || index == 4
+                ? Image.network(androidSrc)
+                : Image.network(iosSrc),
+          ),
         );
       },
       padding: EdgeInsets.only(

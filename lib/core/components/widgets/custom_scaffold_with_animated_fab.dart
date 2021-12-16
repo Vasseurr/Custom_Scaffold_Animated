@@ -23,6 +23,7 @@ class _CustomScaffoldState extends State<CustomScaffold> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        resizeToAvoidBottomInset: false,
         appBar: appBar(context),
         floatingActionButton: widget.type == 1
             ? SpecialFABButton(

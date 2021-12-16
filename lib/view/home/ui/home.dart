@@ -8,7 +8,7 @@ import 'package:get/get.dart';
 import 'home_page.dart';
 import 'mail.dart';
 import 'profile_page.dart';
-import 'star.dart';
+import 'favourite_page.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -28,7 +28,7 @@ class _HomeState extends State<Home> {
             children: [
               //pages
               HomePage(),
-              StarPage(),
+              FavouritePage(),
               MailPage(),
               ProfilePage(),
             ],

@@ -6,6 +6,8 @@ import 'core/init/cache/hive_manager.dart';
 import 'core/routes/app_pages.dart';
 import 'core/routes/app_routes.dart';
 
+//Vasseurr - CopyRight
+
 void main() async {
   await HiveManager.preferencesInit();
   //await Hive.initFlutter();

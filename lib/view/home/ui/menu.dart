@@ -39,7 +39,6 @@ class _MenuState extends State<Menu> {
       padding: EdgeInsets.zero,
       children: [
         SizedBox(
-          height: context.getHeight * 0.25,
           child: DrawerHeader(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -58,7 +57,6 @@ class _MenuState extends State<Menu> {
             ),
           ),
         ),
-        SizedBox(height: context.getHeight * 0.02),
         ListTile(
           leading: Icon(Icons.folder, color: Colors.white),
           title: Text("My Files",
@@ -101,14 +99,14 @@ class _MenuState extends State<Menu> {
           onTap: () {},
         ),
         SizedBox(
-          height: context.getHeight * 0.02,
+          height: context.getHeight * 0.01,
         ),
         Divider(
           color: Colors.blue[100],
           thickness: 1,
         ),
         SizedBox(
-          height: context.getHeight * 0.02,
+          height: context.getHeight * 0.01,
         ),
         ListTile(
           title: Text("Contact Us",
@@ -125,10 +123,10 @@ class _MenuState extends State<Menu> {
           onTap: () {},
         ),
         ListTile(
-          title: Text("Logout",
-              style: TextStyle(
-                color: context.darkblue,
-              )),
+          title: Text(
+            "Logout",
+            style: TextStyle(color: Colors.white),
+          ),
           onTap: () {
             final snackBar = SnackBar(
                 backgroundColor: Colors.blue, content: Text("Çıkış yapıldı"));

@@ -3,7 +3,7 @@ import 'package:animated_bar_fab/view/home/ui/home.dart';
 import 'package:animated_bar_fab/view/home/ui/mail.dart';
 import 'package:animated_bar_fab/view/home/ui/menu.dart';
 import 'package:animated_bar_fab/view/home/ui/profile_page.dart';
-import 'package:animated_bar_fab/view/home/ui/star.dart';
+import 'package:animated_bar_fab/view/home/ui/favourite_page.dart';
 import 'package:get/get.dart';
 
 import 'app_routes.dart';
@@ -14,7 +14,7 @@ class AppPages {
         name: Routes.HOME, page: () => const Home(), binding: HomeBinding()),
     GetPage(
         name: Routes.STAR,
-        page: () => const StarPage(),
+        page: () => const FavouritePage(),
         binding: HomeBinding()),
     GetPage(
         name: Routes.MAIL,
